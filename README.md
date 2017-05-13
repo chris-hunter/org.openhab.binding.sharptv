@@ -22,15 +22,15 @@ Number SharpTV_AvMode       "AV Mode [%.0f]"        { channel="sharptv:sharptv:f
 Switch SharpTV_DisableEco   "DisableEco Mode"       { channel="sharptv:sharptv:f8b7a5c8-7917-11e5-80a3-242642edb3b3:disable-eco" }
 ```
 
-For selecting input, you set the item to 1 for HDMI1, 2 for HDMI2, etc.
+For powering on or off, send that item the ON or OFF commands.
 
 For setting volume, you can set the item to a value between 0 and 100, or send that item the INCREASE or DECREASE command.
 
-For setting the channel, you can set the item to the value of the channel, or send that item the INCREASE or DECREASE command.
-
 For muting/unmuting, send that item the On or OFF commands.
 
-For powering on or off, send that item the ON or OFF commands.
+For setting the channel, you can set the item to the value of the channel, or send that item the INCREASE or DECREASE command.
+
+For selecting input, you set the item to 1 for HDMI1, 2 for HDMI2, etc.
 
 For setting the AV Mode, you set the item to the number that corresponds to the desired AV Mode.  There doesn't appear to be a standard numbering scheme, so you may need to consult the manual for your specific model TV.
 
