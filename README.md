@@ -18,6 +18,7 @@ Dimmer SharpTV_Volume   "Volume [%.0f %%]"          { channel="sharptv:sharptv:f
 Switch SharpTV_Mute     "Mute [%s]"                 { channel="sharptv:sharptv:f8b7a5c8-7917-11e5-80a3-242642edb3b3:mute" }
 Dimmer SharpTV_Channel  "Channel [%.0f]"            { channel="sharptv:sharptv:f8b7a5c8-7917-11e5-80a3-242642edb3b3:channel" }
 Number SharpTV_Input    "Input [%.0f]"              { channel="sharptv:sharptv:f8b7a5c8-7917-11e5-80a3-242642edb3b3:input" }
+Number SharpTV_AvMode   "AV Mode [%.0f]"            { channel="sharptv:sharptv:f8b7a5c8-7917-11e5-80a3-242642edb3b3:av-mode" }
 ```
 
 For selecting input, you set the item to 1 for HDMI1, 2 for HDMI2, etc.
@@ -29,3 +30,5 @@ For setting the channel, you can set the item to the value of the channel, or se
 For muting/unmuting, send that item the On or OFF commands.
 
 For powering on or off, send that item the ON or OFF commands.
+
+For setting the AV Mode, you set the item to the number that corresponds to the desired AV Mode.  There doesn't appear to be a standard numbering scheme, so you may need to consult the manual for your specific model TV.
