@@ -2,7 +2,7 @@
 
 In addition to putting the sharptv jar file into the addons directory, you also may need to put the upnp jar into the addons directory.  If you have another binding installed that uses upnp for discovery, this may not be necessary.
 
-Put the sharptv binding into debug mode so that we can capture what it gets in the upnp response from your TVs.  In the Karaf console you would enter the following.
+If your TV is not being discovered, ut the sharptv binding into debug mode so that we can capture what it gets in the upnp response from your TVs.  In the Karaf console you would enter the following.
 
 ```
 log:set DEBUG org.openhab.binding.sharptv
@@ -34,4 +34,4 @@ For selecting input, you set the item to 1 for HDMI1, 2 for HDMI2, etc.
 
 For setting the AV Mode, you set the item to the number that corresponds to the desired AV Mode.  There doesn't appear to be a standard numbering scheme, so you may need to consult the manual for your specific model TV.
 
-Sending a ON or OFF command to the disable-eco channel will cause the binding to send the `RSPW2` command to the TV.
+Sending a ON or OFF command to the disable-eco channel will cause the binding to send the `RSPW2` command to the TV. If Eco mode is not disabled, you may need to send this command while the TV is powered on. Disabling Eco mode should allow the power ON command to work when the TV is powered off.
