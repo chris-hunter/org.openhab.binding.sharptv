@@ -25,7 +25,7 @@ You should see something like this.
 241 │ Active   │  80 │ 2.4.0                  │ org.jupnp
 ```
 
-If your TV is not being discovered, ut the sharptv binding into debug mode so that we can capture what it gets in the upnp response from your TVs.
+If your TV is not being discovered, put the sharptv binding into debug mode so that we can capture what it gets in the upnp response from your TVs.
 In the Karaf console you would enter the following.
 
 ```
