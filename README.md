@@ -1,8 +1,30 @@
 # org.openhab.binding.sharptv
 
-In addition to putting the sharptv jar file into the addons directory, you also may need to put the upnp jar into the addons directory.  If you have another binding installed that uses upnp for discovery, this may not be necessary.
+In addition to putting the sharptv jar file into the addons directory, you also may need to install the upnp feature.
+If you have another binding installed that uses upnp for discovery, this may not be necessary.
 
-If your TV is not being discovered, ut the sharptv binding into debug mode so that we can capture what it gets in the upnp response from your TVs.  In the Karaf console you would enter the following.
+Run this from the karaf console to install the upnp feature.
+
+```
+feature:install esh-io-transport-upnp
+```
+
+Then run this from the karaf console to confirm it’s installed.
+
+```
+list -s | grep upnp
+```
+
+You should see something like this.
+
+```
+239 │ Active   │  80 │ 0.10.0.201808130936    │ org.eclipse.smarthome.config.discovery.upnp
+240 │ Active   │  80 │ 0.10.0.201808130936    │ org.eclipse.smarthome.io.transport.upnp
+241 │ Active   │  80 │ 2.4.0                  │ org.jupnp
+```
+
+If your TV is not being discovered, ut the sharptv binding into debug mode so that we can capture what it gets in the upnp response from your TVs.
+In the Karaf console you would enter the following.
 
 ```
 log:set DEBUG org.openhab.binding.sharptv
