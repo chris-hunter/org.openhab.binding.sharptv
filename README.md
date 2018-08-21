@@ -1,5 +1,7 @@
 # org.openhab.binding.sharptv
 
+Put the sharptv binding jar file in the openHAB addons directory.
+
 In addition to putting the sharptv jar file into the addons directory, you also may need to install the upnp feature.
 If you have another binding installed that uses upnp for discovery, this may not be necessary.
 
